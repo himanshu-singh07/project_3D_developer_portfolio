@@ -37,9 +37,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "himanshu",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "https://formspree.io/f/mnqyojdd",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -65,6 +65,7 @@ const Contact = () => {
   };
 
   return (
+
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
@@ -130,7 +131,69 @@ const Contact = () => {
         <EarthCanvas />
       </motion.div>
     </div>
+   
   );
 };
 
 export default SectionWrapper(Contact, "contact");
+
+
+// import React from 'react'
+// import './contact.css'
+// import { SectionWrapper } from "../hoc";
+// import React, { useRef, useState } from "react";
+// import { motion } from "framer-motion";
+// import { EarthCanvas } from "./canvas";
+// // import { styles } from "../styles";
+// import { slideIn } from "../utils/motion";
+
+
+    
+
+// function Contact() {
+ 
+//   return (
+
+//     // <><div>
+
+//       <>
+//       // <><div>
+//       <div className="content">
+//         <div className="h4">
+//           <h2 className="contact-h2">Get In Touch</h2>
+//         </div>
+//       </div><div className="containor">
+//         <div className="contactForm">
+//           <form action="https://formspree.io/f/mnqyojdd" method="POST" id="form">
+//             <h2>Send Message</h2>
+//             <div className="inputBox">
+//               <input type="text" name="Name" id="Name" required="required" autocomplete="off" placeholder="Full Name" />
+//             </div>
+//             <div className="inputBox">
+//               <input type="text" name="Email" id="Email" required="required" autocomplete="off" placeholder="Email ID" />
+//             </div>
+//             <div className="inputBox">
+//               <textarea type="text" required="required" name="message" id="message" autocomplete="off"
+//                 placeholder="Type your Message"></textarea>
+//             </div>
+//             <div className="inputBox">
+//               <button type="submit" value="Submit" class="button">
+//                 submit
+//               </button>
+//               <span id="load"></span>
+//             </div>
+//           </form>
+//         </div>
+//       </div>
+//       // </div>
+//       <motion.div
+//         variants={slideIn("right", "tween", 0.2, 1)}
+//         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+//       >
+//         <EarthCanvas />
+//       </motion.div></></>
+      
+//   )
+// }
+
+// export default SectionWrapper(Contact, "contact");
